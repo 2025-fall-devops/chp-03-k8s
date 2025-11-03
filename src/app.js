@@ -1,12 +1,4 @@
 const http = require('http');
-const asciify = require('asciify');
-
-let asciiArt = "";
-
-asciify(
-	'DevOps',
-	(err, res) => asciiArt = res,
-);
 
 const server =
 	http.createServer(
@@ -24,9 +16,7 @@ The D20 rolled a ${
 					Math.floor(
 						Math.random() * 20,
 					) + 1
-				}
-
-${asciiArt}`,
+				}`,
 			);
 		},
 	);
