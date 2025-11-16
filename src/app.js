@@ -8,7 +8,7 @@ const server =
 					'text/plain',
 			});
 			res.end(
-				`Hello, World ! ! !
+				`Fundamentals of DevOps ! ! !
 
 The time on the server is ${new Date().toLocaleString()}
 
